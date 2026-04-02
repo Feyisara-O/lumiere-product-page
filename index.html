@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumière — Radiant Youth Complex</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader">
+    <span class="page-loader__logo">Lumière</span>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">Lumière</a>
+      <div class="nav__links">
+        <a href="#ingredients" class="nav__link">Ingredients</a>
+        <a href="#ritual" class="nav__link">How to Use</a>
+        <a href="#reviews" class="nav__link">Reviews</a>
+      </div>
+      <div class="nav__right">
+        <button class="nav__wishlist" id="navWishlist" aria-label="Wishlist">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </button>
+        <button class="nav__cart-btn" id="navCartBtn" aria-label="Open cart">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="nav__cart-count" id="cartCount"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="#" class="breadcrumb__link">Home</a>
+      <span class="breadcrumb__sep">›</span>
+      <a href="#" class="breadcrumb__link">Serums</a>
+      <span class="breadcrumb__sep">›</span>
+      <span class="breadcrumb__current">Radiant Youth Complex</span>
+    </div>
+  </div>
+
+  <!-- PRODUCT -->
+  <main class="product" id="productTop">
+    <div class="container product__grid">
+
+      <!-- GALLERY -->
+      <div class="gallery" id="gallery">
+        <div class="gallery__main" id="galleryMain">
+          <img
+            src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&q=85"
+            alt="Lumière Radiant Youth Serum — front view"
+            id="mainImage"
+            class="gallery__main-img"
+          />
+          <div class="gallery__badge">Bestseller</div>
+          <button class="gallery__zoom-btn" id="zoomBtn" aria-label="Zoom image">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </button>
+        </div>
+        <div class="gallery__thumbs" id="galleryThumbs">
+          <button class="gallery__thumb active" data-src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&q=85" data-alt="Serum bottle front" aria-label="View image 1">
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=140&q=75" alt="Serum bottle front" loading="lazy"/>
+          </button>
+          <button class="gallery__thumb" data-src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&q=85" data-alt="Serum texture close-up" aria-label="View image 2">
+            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=140&q=75" alt="Serum texture" loading="lazy"/>
+          </button>
+          <button class="gallery__thumb" data-src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=85" data-alt="Skincare lifestyle" aria-label="View image 3">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=140&q=75" alt="Skincare lifestyle" loading="lazy"/>
+          </button>
+          <button class="gallery__thumb" data-src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=800&q=85" data-alt="Serum dropper detail" aria-label="View image 4">
+            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=800&q=85" alt="Serum dropper detail" loading="lazy"/>
+          </button>
+        </div>
+      </div>
+
+      <!-- INFO -->
+      <div class="info">
+        <p class="info__brand">Lumière Paris</p>
+        <h1 class="info__title">Radiant Youth Complex</h1>
+        <p class="info__subtitle">Advanced Brightening Serum · 30ml</p>
+
+        <div class="info__rating">
+          <div class="stars" aria-label="4.8 out of 5 stars">
+            <span class="star">★</span><span class="star">★</span>
+            <span class="star">★</span><span class="star">★</span>
+            <span class="star half">★</span>
+          </div>
+          <a href="#reviews" class="info__rating-count">4.8 · 214 reviews</a>
+        </div>
+
+        <!-- SOCIAL PROOF -->
+        <div class="social-proof">
+          <span class="social-proof__dot"></span>
+          <span id="viewerCount">12</span> people viewing this right now
+        </div>
+
+        <div class="info__price-block">
+          <span class="info__price" id="currentPrice">£89.00</span>
+          <span class="info__price-old" id="oldPrice">£112.00</span>
+          <span class="info__price-save" id="saveLabel">Save 21%</span>
+        </div>
+
+        <p class="info__desc" id="productDesc">
+          A potent fusion of Vitamin C, Bakuchiol, and rare Orchid Extract.
+          Visibly reduces dark spots in 14 days while restoring luminosity
+          to stressed, dull skin. Dermatologist-tested. Fragrance-free.
+        </p>
+
+        <!-- SIZE VARIANT -->
+        <div class="info__variants">
+          <p class="info__label">Size</p>
+          <div class="variants" data-group="size">
+            <button class="variant active" data-size="30ml" data-price="89" data-old="112">30ml</button>
+            <button class="variant" data-size="50ml" data-price="129" data-old="160">50ml · £129.00</button>
+          </div>
+        </div>
+
+        <!-- SKIN TYPE -->
+        <div class="info__variants">
+          <p class="info__label">Skin Type</p>
+          <div class="variants" data-group="skin">
+            <button class="variant active" data-skin="all">All Skin Types</button>
+            <button class="variant" data-skin="sensitive">Sensitive</button>
+            <button class="variant" data-skin="oily">Oily / Combo</button>
+          </div>
+        </div>
+
+        <!-- ACTIONS -->
+        <div class="info__actions">
+          <div class="qty">
+            <button class="qty__btn" id="qtyMinus" aria-label="Decrease">−</button>
+            <span class="qty__val" id="qtyVal">1</span>
+            <button class="qty__btn" id="qtyPlus" aria-label="Increase">+</button>
+          </div>
+          <button class="btn btn--primary" id="addToCart">
+            Add to Cart · <span id="ctaPrice">£89.00</span>
+          </button>
+          <button class="btn btn--icon wishlist-btn" id="wishlistBtn" aria-label="Add to wishlist" aria-pressed="false">
+            <svg class="heart-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- TRUST -->
+        <div class="trust">
+          <div class="trust__item"><span>🚚</span><span>Free UK delivery over £50</span></div>
+          <div class="trust__item"><span>🔄</span><span>30-day returns</span></div>
+          <div class="trust__item"><span>🌿</span><span>Vegan & cruelty-free</span></div>
+          <div class="trust__item"><span>🧪</span><span>Dermatologist tested</span></div>
+        </div>
+
+        <p class="info__stock">
+          <span class="stock-dot"></span>Only 6 left in stock
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- INGREDIENTS -->
+  <section class="ingredients" id="ingredients">
+    <div class="container">
+      <p class="section__eyebrow reveal">What's inside</p>
+      <h2 class="section__title reveal">Key Ingredients</h2>
+      <div class="ingredients__grid">
+        <div class="ingredient-card reveal" data-accent="#c9a96e">
+          <div class="ingredient-card__icon">❋</div>
+          <h3>Vitamin C 15%</h3>
+          <p>Brightens dark spots and uneven tone. Boosts collagen synthesis for firmer skin.</p>
+        </div>
+        <div class="ingredient-card reveal" data-accent="#c9948a">
+          <div class="ingredient-card__icon">✦</div>
+          <h3>Bakuchiol</h3>
+          <p>Nature's retinol alternative. Reduces fine lines without irritation. Safe for sensitive skin.</p>
+        </div>
+        <div class="ingredient-card reveal" data-accent="#9aab8a">
+          <div class="ingredient-card__icon">✿</div>
+          <h3>Orchid Extract</h3>
+          <p>Rare antioxidant complex. Shields against environmental stressors and restores radiance.</p>
+        </div>
+        <div class="ingredient-card reveal" data-accent="#8aabb0">
+          <div class="ingredient-card__icon">◈</div>
+          <h3>Hyaluronic Acid</h3>
+          <p>Triple-weight formula. Deeply hydrates all skin layers for plump, dewy finish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO USE -->
+  <section class="how-to-use" id="ritual">
+    <div class="container">
+      <p class="section__eyebrow">Ritual</p>
+      <h2 class="section__title">How to Use</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">01</div>
+          <div class="step__content">
+            <h3>Cleanse</h3>
+            <p>Begin with clean, damp skin. Pat dry gently — do not rub.</p>
+          </div>
+        </div>
+        <div class="step__line"></div>
+        <div class="step">
+          <div class="step__num">02</div>
+          <div class="step__content">
+            <h3>Apply</h3>
+            <p>Dispense 3–4 drops. Press gently into skin from centre outward.</p>
+          </div>
+        </div>
+        <div class="step__line"></div>
+        <div class="step">
+          <div class="step__num">03</div>
+          <div class="step__content">
+            <h3>Seal</h3>
+            <p>Follow with your moisturiser. Use AM & PM for best results.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <p class="section__eyebrow reveal">Real results</p>
+      <h2 class="section__title reveal">Customer Reviews</h2>
+      <div class="reviews__summary reveal">
+        <div class="reviews__score">4.8</div>
+        <div class="reviews__meta">
+          <div class="stars large">★★★★★</div>
+          <p>Based on 214 verified reviews</p>
+        </div>
+      </div>
+      <div class="reviews__grid">
+        <article class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="review-card__text">"My skin has never looked this good. Two weeks in and the dark spots from last summer are genuinely fading. I'm obsessed."</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar" style="background:#e8c5c0;color:#a87068">S</div>
+            <div><strong>Sophia R.</strong><span>Verified · London</span></div>
+          </div>
+          <div class="review-card__helpful">
+            <span>Helpful?</span>
+            <button class="helpful-btn" data-type="yes">👍 Yes (12)</button>
+            <button class="helpful-btn" data-type="no">👎 No (1)</button>
+          </div>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="review-card__text">"Finally a Vitamin C serum that doesn't irritate my sensitive skin. The texture is incredible — absorbs instantly with no stickiness."</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar" style="background:#d5e0c5;color:#5a7048">A</div>
+            <div><strong>Amara K.</strong><span>Verified · Manchester</span></div>
+          </div>
+          <div class="review-card__helpful">
+            <span>Helpful?</span>
+            <button class="helpful-btn" data-type="yes">👍 Yes (8)</button>
+            <button class="helpful-btn" data-type="no">👎 No (0)</button>
+          </div>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars">★★★★☆</div>
+          <p class="review-card__text">"Genuinely luxurious. The packaging, the dropper, the scent-free formula — it all feels premium. Skin looks brighter after week one."</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar" style="background:#c5d0e0;color:#486078">P</div>
+            <div><strong>Priya M.</strong><span>Verified · Birmingham</span></div>
+          </div>
+          <div class="review-card__helpful">
+            <span>Helpful?</span>
+            <button class="helpful-btn" data-type="yes">👍 Yes (5)</button>
+            <button class="helpful-btn" data-type="no">👎 No (0)</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY BAR -->
+  <div class="sticky-bar" id="stickyBar" aria-hidden="true">
+    <div class="container sticky-bar__inner">
+      <div class="sticky-bar__info">
+        <strong>Radiant Youth Complex</strong>
+        <span id="stickySize">30ml · £89.00</span>
+      </div>
+      <button class="btn btn--primary sticky-bar__cta" id="stickyAddToCart">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- IMAGE ZOOM MODAL -->
+  <div class="zoom-modal" id="zoomModal" role="dialog" aria-modal="true" aria-label="Product image zoom">
+    <button class="zoom-modal__close" id="zoomClose" aria-label="Close zoom">✕</button>
+    <img class="zoom-modal__img" id="zoomImg" src="" alt="Zoomed product image" />
+  </div>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Shopping cart">
+    <div class="cart-drawer__header">
+      <h2 class="cart-drawer__title">Your Cart</h2>
+      <button class="cart-drawer__close" id="cartClose" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-drawer__body" id="cartBody">
+      <div class="cart-empty" id="cartEmpty">
+        <p>Your cart is empty.</p>
+        <span>Add something beautiful.</span>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+    </div>
+    <div class="cart-drawer__footer" id="cartFooter" style="display:none">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">£0.00</strong>
+      </div>
+      <p class="cart-shipping">Free shipping on this order 🎉</p>
+      <button class="btn btn--primary cart-checkout">Proceed to Checkout</button>
+      <button class="btn btn--ghost cart-continue" id="cartContinue">Continue Shopping</button>
+    </div>
+  </aside>
+
+  <script src="main.js"></script>
+</body>
+</html>
