@@ -142,4 +142,4 @@ Built by **Feyisara Ogunyemi** — freelance web developer and designer behind [
 
 I build premium digital experiences for lifestyle brands, product businesses, and founders who care about craft.
 
-**Available for freelance work** — [Get in touch](#)
+**Available for freelance work** — [Get in touch]("#https://www.linkedin.com/in/mofeyisara-okunola-73121b277?utm_source=share_via&utm_content=profile&utm_medium=member_android")
