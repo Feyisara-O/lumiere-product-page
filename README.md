@@ -2,7 +2,7 @@
 
 A production-quality, single-page e-commerce product experience built for a fictional luxury skincare brand. Designed and developed as a portfolio project to demonstrate real-world frontend engineering, UI/UX design judgment, and attention to conversion-focused detail.
 
-**Live Demo:** [View Project](#) &nbsp;·&nbsp; **Portfolio:** [FeyisaraCodes](#)
+**Live Demo:** [View Project](https://feyisara-o.github.io/lumiere-product-page/) &nbsp;·&nbsp; **Portfolio:** [FeyisaraCodes](#)
 
 ---
 
