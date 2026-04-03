@@ -138,7 +138,7 @@ This was built to show potential clients and collaborators that I can:
 
 ## About
 
-Built by **Feyisara Ogunyemi** — freelance web developer and designer behind [FeyisaraCodes](#).
+Built by **Feyisara Okunola** — freelance web developer and designer behind [FeyisaraCodes](#).
 
 I build premium digital experiences for lifestyle brands, product businesses, and founders who care about craft.
 
