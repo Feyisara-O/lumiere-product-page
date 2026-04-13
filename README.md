@@ -140,7 +140,7 @@ This was built to show potential clients and collaborators that I can:
 
 ## About
 
-Built by **Feyisara Okunola** — freelance web developer and designer behind [FeyisaraCodes](https://feyisara-o.github.io/feyisara-porfolio/).
+Built by **Feyisara Okunola** — freelance web developer and designer behind [FeyisaraCodes](https://feyisara-o.github.io/feyisaracodes-blog/).
 
 I build premium digital experiences for lifestyle brands, product businesses, and founders who care about craft.
 
